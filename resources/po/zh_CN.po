@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Copyous\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 00:23+0000\n"
+"POT-Creation-Date: 2026-10-10 23:30+0000\n"
 "PO-Revision-Date: 2025-12-19 18:30+0800\n"
 "Last-Translator: everyx <lunt.luo@gmail.com>\n"
 "Language-Team: Chinese (China)\n"
@@ -125,8 +125,8 @@ msgstr "已复制颜色"
 #: src/lib/preferences/general/feedbackSettings.ts:259
 #: src/lib/preferences/general/feedbackSettings.ts:308
 #: src/lib/preferences/shortcuts/itemShortcuts.ts:39
-#: src/lib/ui/components/editDialog.ts:217
-#: src/lib/ui/components/editDialog.ts:244
+#: src/lib/ui/components/editDialog.ts:220
+#: src/lib/ui/components/editDialog.ts:247
 msgid "None"
 msgstr "无"
 
@@ -216,7 +216,7 @@ msgstr "选择哪些类型被允许"
 #: src/lib/preferences/dependencies/dependencies.ts:224
 #: src/lib/preferences/general/appExclusionSettings.ts:171
 #: src/lib/preferences/shortcuts/shortcutRow.ts:131
-#: src/lib/ui/components/editDialog.ts:306 src/lib/ui/indicator.ts:47
+#: src/lib/ui/components/editDialog.ts:309 src/lib/ui/indicator.ts:47
 msgid "Cancel"
 msgstr "取消"
 
@@ -344,7 +344,7 @@ msgid "Edit Action"
 msgstr "编辑动作"
 
 #: src/lib/preferences/actions/actionDialog.ts:662
-#: src/lib/ui/components/editDialog.ts:313
+#: src/lib/ui/components/editDialog.ts:316
 msgid "Save"
 msgstr "保存"
 
@@ -688,62 +688,62 @@ msgstr "显示 Unicode 编码"
 msgid "Show the Unicode of the character"
 msgstr "显示该字符的 Unicode 编码"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:16
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:17
 msgid "Code Item"
 msgstr "代码项"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:17
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:18
 msgid "Configure code clipboard items"
 msgstr "配置代码型剪贴板项目"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:21
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:22
 #: src/lib/preferences/customization/items/fileItemCustomization.ts:179
 msgid "Syntax Highlighting"
 msgstr "语法高亮"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:22
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:23
 msgid "Enable or disable syntax highlighting in the code item"
 msgstr "启用或禁用代码项中的语法高亮"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:27
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:28
 #: src/lib/preferences/customization/items/fileItemCustomization.ts:185
 msgid "Show Line Numbers"
 msgstr "显示行号"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:28
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:29
 msgid "Show line numbers in the code item"
 msgstr "在代码项中显示行号"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:33
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:34
 msgid "Show Code Info"
 msgstr "显示代码信息"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:34
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:35
 msgid "Show extra information in the code item"
 msgstr "在代码项中显示额外信息"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:39
-#: src/lib/preferences/customization/items/textItemCustomization.ts:27
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:40
+#: src/lib/preferences/customization/items/textItemCustomization.ts:28
 msgid "Text Count Mode"
 msgstr "文本统计模式"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:40
-#: src/lib/preferences/customization/items/textItemCustomization.ts:28
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:41
+#: src/lib/preferences/customization/items/textItemCustomization.ts:29
 msgid "Show the number of characters, words or lines"
 msgstr "显示字符数、单词数或行数"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:41
-#: src/lib/preferences/customization/items/textItemCustomization.ts:29
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:42
+#: src/lib/preferences/customization/items/textItemCustomization.ts:30
 msgid "Characters"
 msgstr "字符数"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:41
-#: src/lib/preferences/customization/items/textItemCustomization.ts:29
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:42
+#: src/lib/preferences/customization/items/textItemCustomization.ts:30
 msgid "Lines"
 msgstr "行数"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:41
-#: src/lib/preferences/customization/items/textItemCustomization.ts:29
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:42
+#: src/lib/preferences/customization/items/textItemCustomization.ts:30
 msgid "Words"
 msgstr "单词数"
 
@@ -878,7 +878,7 @@ msgid "File Preview and File Info"
 msgstr "文件预览和文件信息"
 
 #: src/lib/preferences/customization/items/fileItemCustomization.ts:172
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:26
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:27
 msgid "Background Size"
 msgstr "背景尺寸"
 
@@ -887,13 +887,13 @@ msgid "Background size of the image preview"
 msgstr "图片预览的背景大小"
 
 #: src/lib/preferences/customization/items/fileItemCustomization.ts:174
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:28
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:29
 #: src/lib/preferences/customization/items/linkItemCustomization.ts:85
 msgid "Contain"
 msgstr "包含"
 
 #: src/lib/preferences/customization/items/fileItemCustomization.ts:174
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:28
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:29
 #: src/lib/preferences/customization/items/linkItemCustomization.ts:85
 msgid "Cover"
 msgstr "覆盖"
@@ -910,23 +910,23 @@ msgstr "在文本预览中显示行号"
 msgid "Configure file exclusions for file previews"
 msgstr "为文件预览配置文件排除项"
 
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:15
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:16
 msgid "Image Item"
 msgstr "图片项"
 
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:16
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:17
 msgid "Configure image clipboard items"
 msgstr "配置图片型剪贴板项目"
 
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:20
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:21
 msgid "Show Image Info"
 msgstr "显示图片信息"
 
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:21
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:22
 msgid "Show extra information in the image item"
 msgstr "在图像项目中显示额外信息"
 
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:27
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:28
 msgid "Background size of the image"
 msgstr "图片的背景缩放比例"
 
@@ -992,19 +992,19 @@ msgstr "链接预览的方向"
 msgid "Configure link exclusions for link previews"
 msgstr "为链接预览配置排除规则"
 
-#: src/lib/preferences/customization/items/textItemCustomization.ts:16
+#: src/lib/preferences/customization/items/textItemCustomization.ts:17
 msgid "Text Item"
 msgstr "文本项"
 
-#: src/lib/preferences/customization/items/textItemCustomization.ts:17
+#: src/lib/preferences/customization/items/textItemCustomization.ts:18
 msgid "Configure text clipboard items"
 msgstr "配置文本型剪贴板项目"
 
-#: src/lib/preferences/customization/items/textItemCustomization.ts:21
+#: src/lib/preferences/customization/items/textItemCustomization.ts:22
 msgid "Show Text Info"
 msgstr "显示文本信息"
 
-#: src/lib/preferences/customization/items/textItemCustomization.ts:22
+#: src/lib/preferences/customization/items/textItemCustomization.ts:23
 msgid "Show extra information in the text item"
 msgstr "在文本项目中显示额外信息"
 
@@ -1208,7 +1208,7 @@ msgid "Error Uninstalling %s"
 msgstr "卸载 %s 出错"
 
 #: src/lib/preferences/dependencies/dependenciesSettings.ts:288
-#: src/lib/preferences/dependencies/dependenciesSettings.ts:382
+#: src/lib/preferences/dependencies/dependenciesSettings.ts:385
 msgid "Manage Highlight.js"
 msgstr "管理 Highlight.js"
 
@@ -1221,11 +1221,11 @@ msgstr "语言"
 msgid "Search"
 msgstr "搜索"
 
-#: src/lib/preferences/dependencies/dependenciesSettings.ts:375
+#: src/lib/preferences/dependencies/dependenciesSettings.ts:378
 msgid "Dependencies"
 msgstr "依赖项"
 
-#: src/lib/preferences/dependencies/dependenciesSettings.ts:383
+#: src/lib/preferences/dependencies/dependenciesSettings.ts:386
 msgid "Manage the Highlight.js installation"
 msgstr "管理 Highlight.js 的安装"
 
@@ -1743,7 +1743,7 @@ msgstr "文件丢失"
 msgid "Error"
 msgstr "错误"
 
-#: src/lib/ui/components/editDialog.ts:269
+#: src/lib/ui/components/editDialog.ts:272
 msgid "Edit Clipboard Item"
 msgstr "编辑剪贴板项目"
 

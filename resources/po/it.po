@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Copyous\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-10 00:23+0000\n"
+"POT-Creation-Date: 2026-10-10 23:30+0000\n"
 "PO-Revision-Date: 2025-12-14 10:45+0100\n"
 "Last-Translator: Fabian Esposito <fabian.esposito@outlook.com>\n"
 "Language-Team: Italiano\n"
@@ -124,8 +124,8 @@ msgstr "Colore copiato"
 #: src/lib/preferences/general/feedbackSettings.ts:259
 #: src/lib/preferences/general/feedbackSettings.ts:308
 #: src/lib/preferences/shortcuts/itemShortcuts.ts:39
-#: src/lib/ui/components/editDialog.ts:217
-#: src/lib/ui/components/editDialog.ts:244
+#: src/lib/ui/components/editDialog.ts:220
+#: src/lib/ui/components/editDialog.ts:247
 msgid "None"
 msgstr "Nessuno"
 
@@ -215,7 +215,7 @@ msgstr "Seleziona quali tipi sono consentiti"
 #: src/lib/preferences/dependencies/dependencies.ts:224
 #: src/lib/preferences/general/appExclusionSettings.ts:171
 #: src/lib/preferences/shortcuts/shortcutRow.ts:131
-#: src/lib/ui/components/editDialog.ts:306 src/lib/ui/indicator.ts:47
+#: src/lib/ui/components/editDialog.ts:309 src/lib/ui/indicator.ts:47
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -346,7 +346,7 @@ msgid "Edit Action"
 msgstr "Modifica l'azione"
 
 #: src/lib/preferences/actions/actionDialog.ts:662
-#: src/lib/ui/components/editDialog.ts:313
+#: src/lib/ui/components/editDialog.ts:316
 msgid "Save"
 msgstr "Salva"
 
@@ -704,63 +704,63 @@ msgstr "Mostra Unicode"
 msgid "Show the Unicode of the character"
 msgstr "Mostra l'Unicode del carattere"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:16
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:17
 msgid "Code Item"
 msgstr "Elemento codice"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:17
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:18
 msgid "Configure code clipboard items"
 msgstr "Configura gli elementi codice degli appunti"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:21
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:22
 #: src/lib/preferences/customization/items/fileItemCustomization.ts:179
 msgid "Syntax Highlighting"
 msgstr "Evidenziazione sintassi"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:22
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:23
 msgid "Enable or disable syntax highlighting in the code item"
 msgstr ""
 "Abilita o disabilita l'evidenziazione della sintassi nell'elemento codice"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:27
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:28
 #: src/lib/preferences/customization/items/fileItemCustomization.ts:185
 msgid "Show Line Numbers"
 msgstr "Mostra numeri di riga"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:28
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:29
 msgid "Show line numbers in the code item"
 msgstr "Mostra i numeri di riga nell'elemento codice"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:33
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:34
 msgid "Show Code Info"
 msgstr "Mostra informazioni codice"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:34
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:35
 msgid "Show extra information in the code item"
 msgstr "Mostra informazioni aggiuntive nell'elemento codice"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:39
-#: src/lib/preferences/customization/items/textItemCustomization.ts:27
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:40
+#: src/lib/preferences/customization/items/textItemCustomization.ts:28
 msgid "Text Count Mode"
 msgstr "Modalità di conteggio del testo"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:40
-#: src/lib/preferences/customization/items/textItemCustomization.ts:28
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:41
+#: src/lib/preferences/customization/items/textItemCustomization.ts:29
 msgid "Show the number of characters, words or lines"
 msgstr "Mostra il numero di caratteri, parole o righe"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:41
-#: src/lib/preferences/customization/items/textItemCustomization.ts:29
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:42
+#: src/lib/preferences/customization/items/textItemCustomization.ts:30
 msgid "Characters"
 msgstr "Caratteri"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:41
-#: src/lib/preferences/customization/items/textItemCustomization.ts:29
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:42
+#: src/lib/preferences/customization/items/textItemCustomization.ts:30
 msgid "Lines"
 msgstr "Righe"
 
-#: src/lib/preferences/customization/items/codeItemCustomization.ts:41
-#: src/lib/preferences/customization/items/textItemCustomization.ts:29
+#: src/lib/preferences/customization/items/codeItemCustomization.ts:42
+#: src/lib/preferences/customization/items/textItemCustomization.ts:30
 msgid "Words"
 msgstr "Parole"
 
@@ -897,7 +897,7 @@ msgid "File Preview and File Info"
 msgstr "Anteprima file e Informazioni file"
 
 #: src/lib/preferences/customization/items/fileItemCustomization.ts:172
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:26
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:27
 msgid "Background Size"
 msgstr "Dimensione sfondo"
 
@@ -906,13 +906,13 @@ msgid "Background size of the image preview"
 msgstr "Dimensione dello sfondo dell'anteprima dell'immagine"
 
 #: src/lib/preferences/customization/items/fileItemCustomization.ts:174
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:28
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:29
 #: src/lib/preferences/customization/items/linkItemCustomization.ts:85
 msgid "Contain"
 msgstr "Contiene"
 
 #: src/lib/preferences/customization/items/fileItemCustomization.ts:174
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:28
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:29
 #: src/lib/preferences/customization/items/linkItemCustomization.ts:85
 msgid "Cover"
 msgstr "Copertina"
@@ -930,23 +930,23 @@ msgstr "Mostra i numeri di riga nell'anteprima del testo"
 msgid "Configure file exclusions for file previews"
 msgstr "Configura le esclusioni di file per le anteprime dei file"
 
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:15
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:16
 msgid "Image Item"
 msgstr "Elemento immagine"
 
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:16
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:17
 msgid "Configure image clipboard items"
 msgstr "Configura gli elementi immagine degli appunti"
 
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:20
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:21
 msgid "Show Image Info"
 msgstr "Mostra informazioni immagine"
 
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:21
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:22
 msgid "Show extra information in the image item"
 msgstr "Mostra informazioni aggiuntive nell'elemento immagine"
 
-#: src/lib/preferences/customization/items/imageItemCustomization.ts:27
+#: src/lib/preferences/customization/items/imageItemCustomization.ts:28
 msgid "Background size of the image"
 msgstr "Dimensione sfondo immagine"
 
@@ -1014,19 +1014,19 @@ msgstr "Orientamento dell'anteprima del link"
 msgid "Configure link exclusions for link previews"
 msgstr "Configurare le esclusioni per le anteprime dei link"
 
-#: src/lib/preferences/customization/items/textItemCustomization.ts:16
+#: src/lib/preferences/customization/items/textItemCustomization.ts:17
 msgid "Text Item"
 msgstr "Elemento di testo"
 
-#: src/lib/preferences/customization/items/textItemCustomization.ts:17
+#: src/lib/preferences/customization/items/textItemCustomization.ts:18
 msgid "Configure text clipboard items"
 msgstr "Configura gli elementi di testo degli appunti"
 
-#: src/lib/preferences/customization/items/textItemCustomization.ts:21
+#: src/lib/preferences/customization/items/textItemCustomization.ts:22
 msgid "Show Text Info"
 msgstr "Mostra informazioni di testo"
 
-#: src/lib/preferences/customization/items/textItemCustomization.ts:22
+#: src/lib/preferences/customization/items/textItemCustomization.ts:23
 msgid "Show extra information in the text item"
 msgstr "Mostra informazioni aggiuntive nell'elemento di testo"
 
@@ -1236,7 +1236,7 @@ msgid "Error Uninstalling %s"
 msgstr "Errore durante la disinstallazione di %s"
 
 #: src/lib/preferences/dependencies/dependenciesSettings.ts:288
-#: src/lib/preferences/dependencies/dependenciesSettings.ts:382
+#: src/lib/preferences/dependencies/dependenciesSettings.ts:385
 msgid "Manage Highlight.js"
 msgstr "Gestisci Highlight.js"
 
@@ -1249,11 +1249,11 @@ msgstr "Lingue"
 msgid "Search"
 msgstr "Ricerca"
 
-#: src/lib/preferences/dependencies/dependenciesSettings.ts:375
+#: src/lib/preferences/dependencies/dependenciesSettings.ts:378
 msgid "Dependencies"
 msgstr "Dipendenze"
 
-#: src/lib/preferences/dependencies/dependenciesSettings.ts:383
+#: src/lib/preferences/dependencies/dependenciesSettings.ts:386
 msgid "Manage the Highlight.js installation"
 msgstr "Gestisci l'installazione di Highlight.js"
 
@@ -1791,7 +1791,7 @@ msgstr "File mancante"
 msgid "Error"
 msgstr "Errore"
 
-#: src/lib/ui/components/editDialog.ts:269
+#: src/lib/ui/components/editDialog.ts:272
 msgid "Edit Clipboard Item"
 msgstr "Modifica elemento degli appunti"
 
