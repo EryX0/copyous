@@ -17,11 +17,9 @@ import { ButtonMask } from '../misc/compatibility.js';
 import { Shortcut } from '../misc/shortcuts.js';
 import { TagsItem } from './components/tagsItem.js';
 
-const SearchCollator = new Intl.Collator(undefined, { sensitivity: 'base' });
-
-function localeContains(text: string, query: string): boolean {
+function localeContains(collator: Intl.Collator, text: string, query: string): boolean {
 	for (let offset = 0; offset <= text.length - query.length; offset++) {
-		const comparison = SearchCollator.compare(text.substring(offset, offset + query.length), query);
+		const comparison = collator.compare(text.substring(offset, offset + query.length), query);
 		if (comparison === 0) return true;
 	}
 	return false;
@@ -56,6 +54,7 @@ export class SearchQuery extends GObject.Object {
 		readonly tag: Tag | null,
 		readonly excludeTagged: boolean,
 		readonly type: ItemType | null,
+		private readonly collator: Intl.Collator,
 	) {
 		super();
 	}
@@ -80,7 +79,7 @@ export class SearchQuery extends GObject.Object {
 		if (this.query.length === 0) return true;
 		if (text.length === 0) return false;
 
-		return text.some((s) => localeContains(s, this.query));
+		return text.some((s) => localeContains(this.collator, s, this.query));
 	}
 
 	public matchesEntry(state: boolean, entry: ClipboardEntry, ...text: string[]): boolean {
@@ -102,6 +101,7 @@ export class SearchQuery extends GObject.Object {
 			this.tag,
 			this.excludeTagged,
 			this.type,
+			this.collator,
 		);
 	}
 }
@@ -261,6 +261,8 @@ class ItemPopupMenu extends PopupMenu.PopupMenu<ItemPopupMenuSignals> {
 	},
 })
 export class SearchEntry extends St.Entry {
+	private _collator: Intl.Collator | undefined = new Intl.Collator(undefined, { sensitivity: 'base' });
+
 	private _prevSearch: SearchQuery | null = null;
 	private _pinned: boolean = false;
 	private _tag: Tag | null = null;
@@ -479,7 +481,16 @@ export class SearchEntry extends St.Entry {
 				change = change === SearchChange.Same || change === typeChange ? typeChange : SearchChange.Different;
 		}
 
-		return new SearchQuery(change, query, this.pinned, excludePinned, this.tag, excludeTagged, this.type);
+		return new SearchQuery(
+			change,
+			query,
+			this.pinned,
+			excludePinned,
+			this.tag,
+			excludeTagged,
+			this.type,
+			this._collator!,
+		);
 	}
 
 	private search() {
@@ -613,6 +624,7 @@ export class SearchEntry extends St.Entry {
 	override destroy() {
 		this.ext.settings.disconnectObject(this);
 		this._menu.destroy();
+		this._collator = undefined;
 
 		super.destroy();
 	}

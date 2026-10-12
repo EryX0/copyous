@@ -14,9 +14,6 @@ import { Icon, loadIcon } from '../../common/icons.js';
 import { TextCountMode } from '../../common/settings.js';
 import { FileType } from './contentPreview.js';
 
-const GraphemeSegmenter = new Intl.Segmenter(undefined, { granularity: 'grapheme' });
-const WordSegmenter = new Intl.Segmenter(undefined, { granularity: 'word' });
-
 function formatBytes(bytes: number): [string, string] {
 	const units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
 	const exp = Math.floor(Math.log10(bytes) / 3);
@@ -110,13 +107,15 @@ export class TextInfo extends ContentInfo {
 
 	private updateCount() {
 		if (this._textCountMode === TextCountMode.Characters) {
+			const segmenter = new Intl.Segmenter(undefined, { granularity: 'grapheme' });
 			let count = 0;
-			for (const _segment of GraphemeSegmenter.segment(this._text)) count++;
+			for (const _segment of segmenter.segment(this._text)) count++;
 
 			this._countLabel.text = ngettext('%d char', '%d chars', count).format(count);
 		} else if (this._textCountMode === TextCountMode.Words) {
+			const segmenter = new Intl.Segmenter(undefined, { granularity: 'word' });
 			let count = 0;
-			for (const segment of WordSegmenter.segment(this._text)) {
+			for (const segment of segmenter.segment(this._text)) {
 				if (segment.isWordLike) count++;
 			}
 
