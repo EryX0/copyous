@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Copyous\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-11 12:25+0000\n"
+"POT-Creation-Date: 2026-10-12 23:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1693,47 +1693,47 @@ msgstr ""
 msgid "Disabled"
 msgstr ""
 
-#: src/lib/ui/components/contentInfo.ts:35
+#: src/lib/ui/components/contentInfo.ts:32
 #, javascript-format
 msgid "%dh"
 msgstr ""
 
-#: src/lib/ui/components/contentInfo.ts:36
+#: src/lib/ui/components/contentInfo.ts:33
 #, javascript-format
 msgid "%dm"
 msgstr ""
 
-#: src/lib/ui/components/contentInfo.ts:37
+#: src/lib/ui/components/contentInfo.ts:34
 #, javascript-format
 msgid "%ds"
 msgstr ""
 
-#: src/lib/ui/components/contentInfo.ts:116
+#: src/lib/ui/components/contentInfo.ts:114
 #, javascript-format
 msgid "%d char"
 msgid_plural "%d chars"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/lib/ui/components/contentInfo.ts:123
+#: src/lib/ui/components/contentInfo.ts:122
 #, javascript-format
 msgid "%d word"
 msgid_plural "%d words"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/lib/ui/components/contentInfo.ts:126
+#: src/lib/ui/components/contentInfo.ts:125
 #, javascript-format
 msgid "%d line"
 msgid_plural "%d lines"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/lib/ui/components/contentInfo.ts:186
+#: src/lib/ui/components/contentInfo.ts:185
 msgid "Missing File"
 msgstr ""
 
-#: src/lib/ui/components/contentInfo.ts:198
+#: src/lib/ui/components/contentInfo.ts:197
 msgid "Error"
 msgstr ""
 
@@ -1846,7 +1846,7 @@ msgstr ""
 msgid "Colo__r"
 msgstr ""
 
-#: src/lib/ui/searchEntry.ts:276
+#: src/lib/ui/searchEntry.ts:278
 msgid "Type to search"
 msgstr ""
 

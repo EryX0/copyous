@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Copyous\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-11 12:25+0000\n"
+"POT-Creation-Date: 2026-10-12 23:52+0000\n"
 "PO-Revision-Date: 2025-11-30 20:29+0700\n"
 "Last-Translator: Victor <firephantom303@gmail.com>\n"
 "Language-Team: Russian\n"
@@ -1722,22 +1722,22 @@ msgstr "Отключить сочетание клавиш"
 msgid "Disabled"
 msgstr "Отключено"
 
-#: src/lib/ui/components/contentInfo.ts:35
+#: src/lib/ui/components/contentInfo.ts:32
 #, javascript-format
 msgid "%dh"
 msgstr ""
 
-#: src/lib/ui/components/contentInfo.ts:36
+#: src/lib/ui/components/contentInfo.ts:33
 #, javascript-format
 msgid "%dm"
 msgstr ""
 
-#: src/lib/ui/components/contentInfo.ts:37
+#: src/lib/ui/components/contentInfo.ts:34
 #, javascript-format
 msgid "%ds"
 msgstr ""
 
-#: src/lib/ui/components/contentInfo.ts:116
+#: src/lib/ui/components/contentInfo.ts:114
 #, javascript-format
 msgid "%d char"
 msgid_plural "%d chars"
@@ -1745,7 +1745,7 @@ msgstr[0] "%d символ"
 msgstr[1] "%d символа"
 msgstr[2] "%d символов"
 
-#: src/lib/ui/components/contentInfo.ts:123
+#: src/lib/ui/components/contentInfo.ts:122
 #, javascript-format
 msgid "%d word"
 msgid_plural "%d words"
@@ -1753,7 +1753,7 @@ msgstr[0] "%d слово"
 msgstr[1] "%d слова"
 msgstr[2] "%d слов"
 
-#: src/lib/ui/components/contentInfo.ts:126
+#: src/lib/ui/components/contentInfo.ts:125
 #, javascript-format
 msgid "%d line"
 msgid_plural "%d lines"
@@ -1761,11 +1761,11 @@ msgstr[0] "%d строка"
 msgstr[1] "%d строки"
 msgstr[2] "%d строк"
 
-#: src/lib/ui/components/contentInfo.ts:186
+#: src/lib/ui/components/contentInfo.ts:185
 msgid "Missing File"
 msgstr "Файл отсутствует"
 
-#: src/lib/ui/components/contentInfo.ts:198
+#: src/lib/ui/components/contentInfo.ts:197
 msgid "Error"
 msgstr "Ошибка"
 
@@ -1881,7 +1881,7 @@ msgstr "С__имвол"
 msgid "Colo__r"
 msgstr "Цв__ет"
 
-#: src/lib/ui/searchEntry.ts:276
+#: src/lib/ui/searchEntry.ts:278
 msgid "Type to search"
 msgstr "Введите текст для поиска"
 

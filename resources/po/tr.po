@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Copyous\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-11 12:25+0000\n"
+"POT-Creation-Date: 2026-10-12 23:52+0000\n"
 "PO-Revision-Date: 2026-03-18 07:29+0300\n"
 "Last-Translator: Muha Aliss <muhaaliss@pm.me>\n"
 "Language-Team: Turkish\n"
@@ -1729,47 +1729,47 @@ msgstr "Kısayolu Devre Dışı Bırak"
 msgid "Disabled"
 msgstr "Devre Dışı"
 
-#: src/lib/ui/components/contentInfo.ts:35
+#: src/lib/ui/components/contentInfo.ts:32
 #, javascript-format
 msgid "%dh"
 msgstr "%d sa"
 
-#: src/lib/ui/components/contentInfo.ts:36
+#: src/lib/ui/components/contentInfo.ts:33
 #, javascript-format
 msgid "%dm"
 msgstr "%d dk"
 
-#: src/lib/ui/components/contentInfo.ts:37
+#: src/lib/ui/components/contentInfo.ts:34
 #, javascript-format
 msgid "%ds"
 msgstr "%d sn"
 
-#: src/lib/ui/components/contentInfo.ts:116
+#: src/lib/ui/components/contentInfo.ts:114
 #, javascript-format
 msgid "%d char"
 msgid_plural "%d chars"
 msgstr[0] "%d karakter"
 msgstr[1] "%d karakter"
 
-#: src/lib/ui/components/contentInfo.ts:123
+#: src/lib/ui/components/contentInfo.ts:122
 #, javascript-format
 msgid "%d word"
 msgid_plural "%d words"
 msgstr[0] "%d kelime"
 msgstr[1] "%d kelime"
 
-#: src/lib/ui/components/contentInfo.ts:126
+#: src/lib/ui/components/contentInfo.ts:125
 #, javascript-format
 msgid "%d line"
 msgid_plural "%d lines"
 msgstr[0] "%d satır"
 msgstr[1] "%d satır"
 
-#: src/lib/ui/components/contentInfo.ts:186
+#: src/lib/ui/components/contentInfo.ts:185
 msgid "Missing File"
 msgstr "Eksik Dosya"
 
-#: src/lib/ui/components/contentInfo.ts:198
+#: src/lib/ui/components/contentInfo.ts:197
 msgid "Error"
 msgstr "Hata"
 
@@ -1882,7 +1882,7 @@ msgstr "K__arakter"
 msgid "Colo__r"
 msgstr "Re__nk"
 
-#: src/lib/ui/searchEntry.ts:276
+#: src/lib/ui/searchEntry.ts:278
 msgid "Type to search"
 msgstr "Aramak için yaz"
 
