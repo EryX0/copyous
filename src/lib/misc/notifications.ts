@@ -17,30 +17,6 @@ import { ClipboardEntry } from '../database/database.js';
 import { normalizeIndentation, trim } from '../ui/components/label.js';
 import { commonDirectory } from '../ui/items/filesItem.js';
 
-export function previewText(text: string, maxLength = 300, maxLines = 6): string {
-	if (!text) return '';
-
-	const stripped = text.replace(/^([ \t]*\r?\n)*/, '');
-	let sample = stripped.slice(0, Math.max(2000, maxLength * 2)).replace(/\r\n/g, '\n');
-	let truncated = stripped.length > sample.length;
-
-	sample = normalizeIndentation(trim(sample), 4);
-	if (!sample.trim()) return '';
-
-	const lines = sample.split('\n');
-	if (lines.length > maxLines) {
-		sample = lines.slice(0, maxLines).join('\n');
-		truncated = true;
-	}
-
-	if (sample.length > maxLength) {
-		sample = sample.slice(0, maxLength);
-		truncated = true;
-	}
-
-	return truncated ? `${sample.trimEnd()}…` : sample;
-}
-
 @registerClass()
 export class NotificationManager extends GObject.Object {
 	private _source: MessageTray.Source | null = null;
@@ -78,10 +54,6 @@ export class NotificationManager extends GObject.Object {
 		source.addNotification(notification);
 	}
 
-	private get previewLength(): number {
-		return this.ext.settings.get_int('notification-preview-length');
-	}
-
 	public textNotification(text: string) {
 		if (!this.ext.settings.get_boolean('send-notification')) return;
 
@@ -89,7 +61,7 @@ export class NotificationManager extends GObject.Object {
 		const notification = new MessageTray.Notification({
 			source,
 			title: _('Copied Text'),
-			body: previewText(text, this.previewLength),
+			body: previewText(text),
 			gicon: loadIcon(this.ext, Icon.Text),
 			isTransient: true,
 		});
@@ -135,19 +107,21 @@ export class NotificationManager extends GObject.Object {
 		if (!this.ext.settings.get_boolean('send-notification')) return;
 
 		let title: string;
-		let body: string | null = previewText(entry.content, this.previewLength);
+		let body: string | null = normalizeIndentation(trim(entry.content), 4);
 		let gicon: Gio.Icon | St.ImageContent;
 		switch (entry.type) {
 			case ItemType.Text:
 				title = _('Copied Text');
 				gicon = loadIcon(this.ext, Icon.Text);
+				body = previewText(entry.content);
 				break;
 			case ItemType.Code:
 				title = _('Copied Code');
 				gicon = loadIcon(this.ext, Icon.Code);
+				body = previewText(entry.content);
 				break;
 			case ItemType.Image: {
-				const file = entry.content.trim().substring('file://'.length);
+				const file = body.substring('file://'.length);
 				title = _('Copied Image');
 
 				try {
@@ -164,10 +138,7 @@ export class NotificationManager extends GObject.Object {
 			}
 			case ItemType.File:
 			case ItemType.Files: {
-				const files = entry.content
-					.trim()
-					.split('\n')
-					.map((f) => Gio.file_new_for_uri(f));
+				const files = body.split('\n').map((f) => Gio.file_new_for_uri(f));
 				const common = files.length === 1 ? files[0]! : commonDirectory(files);
 
 				title = ngettext('Copied %d File', 'Copied %d Files', files.length).format(files.length);
@@ -181,12 +152,10 @@ export class NotificationManager extends GObject.Object {
 				break;
 			case ItemType.Character:
 				title = _('Copied Character');
-				body = entry.content;
 				gicon = loadIcon(this.ext, Icon.Character);
 				break;
 			case ItemType.Color:
 				title = _('Copied Color');
-				body = entry.content;
 				gicon = loadIcon(this.ext, Icon.Color);
 				break;
 		}
@@ -195,4 +164,17 @@ export class NotificationManager extends GObject.Object {
 		const notification = new MessageTray.Notification({ source, title, body, gicon, isTransient: true });
 		source.addNotification(notification);
 	}
+}
+
+function previewText(text: string, maxLength = 600, maxLines = 6): string {
+	if (!text) return '';
+
+	const lines = text.split('\n');
+	if (text.length <= maxLength && lines.length <= maxLength) return text;
+
+	text = lines.slice(0, maxLines).join('\n');
+	if (text.length <= maxLength) return text;
+
+	text = text.slice(0, maxLength);
+	return `${text}...`;
 }
